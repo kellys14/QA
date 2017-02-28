@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -48,7 +47,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tdc-Yf-ADd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-42.399999999999999" y="-609.44527736131943"/>
+            <point key="canvasLocation" x="-42" y="-466"/>
         </scene>
         <!--Quiz-->
         <scene sceneID="tne-QT-ifu">
@@ -109,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="974" y="-231"/>
+            <point key="canvasLocation" x="974" y="-2"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="s34-Po-6KM">
@@ -127,7 +126,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2r7-9O-Cxo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-42" y="167"/>
+            <point key="canvasLocation" x="-42" y="363"/>
         </scene>
         <!--QA-->
         <scene sceneID="PQy-93-Xr2">
@@ -141,7 +140,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZp-CY-IYy">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZp-CY-IYy">
                                 <rect key="frame" x="127" y="108" width="120" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Store Q &amp; A"/>
@@ -149,21 +148,21 @@
                                     <action selector="submitQandA:" destination="lct-Tp-5gd" eventType="touchUpInside" id="Cui-Kw-pH4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSH-Up-qny">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSH-Up-qny">
                                 <rect key="frame" x="127" y="156" width="120" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Submit and Play"/>
                                 <connections>
-                                    <segue destination="Og2-FR-vqj" kind="show" id="8FM-8b-NNA"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="E6Z-Xw-yOB"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Question Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nXG-m4-WKs">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Question Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nXG-m4-WKs">
                                 <rect key="frame" x="42" y="70" width="290" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Answer Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jvi-x1-Ybe">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Answer Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jvi-x1-Ybe">
                                 <rect key="frame" x="42" y="204" width="290" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -172,23 +171,14 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="nXG-m4-WKs" firstAttribute="leading" secondItem="oYn-Tx-Kr9" secondAttribute="leadingMargin" constant="26" id="33w-o0-THM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="IZp-CY-IYy" secondAttribute="trailing" constant="112" id="6Uc-0d-0wG"/>
-                            <constraint firstItem="AgQ-i0-Mmy" firstAttribute="top" secondItem="Jvi-x1-Ybe" secondAttribute="bottom" constant="384" id="71v-Yb-Zs1"/>
-                            <constraint firstItem="Jvi-x1-Ybe" firstAttribute="centerX" secondItem="nXG-m4-WKs" secondAttribute="centerX" id="A2r-pV-xWs"/>
-                            <constraint firstItem="IZp-CY-IYy" firstAttribute="top" secondItem="nXG-m4-WKs" secondAttribute="bottom" constant="8" id="FlU-xW-SQC"/>
-                            <constraint firstItem="nXG-m4-WKs" firstAttribute="centerX" secondItem="oYn-Tx-Kr9" secondAttribute="centerX" id="MrR-Fj-wqe"/>
-                            <constraint firstItem="IZp-CY-IYy" firstAttribute="centerX" secondItem="nXG-m4-WKs" secondAttribute="centerX" id="NUA-It-5Fv"/>
-                            <constraint firstItem="Jvi-x1-Ybe" firstAttribute="leading" secondItem="oYn-Tx-Kr9" secondAttribute="leadingMargin" constant="26" id="Op1-1H-gCn"/>
-                            <constraint firstItem="SSH-Up-qny" firstAttribute="leading" secondItem="oYn-Tx-Kr9" secondAttribute="leadingMargin" constant="111" id="TUb-85-SQs"/>
-                            <constraint firstItem="SSH-Up-qny" firstAttribute="centerX" secondItem="nXG-m4-WKs" secondAttribute="centerX" id="UHE-MG-RuG"/>
-                            <constraint firstItem="Jvi-x1-Ybe" firstAttribute="top" secondItem="SSH-Up-qny" secondAttribute="bottom" constant="8" id="UX0-tB-MlI"/>
-                            <constraint firstItem="IZp-CY-IYy" firstAttribute="leading" secondItem="oYn-Tx-Kr9" secondAttribute="leadingMargin" constant="111" id="aHq-wd-PR1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="nXG-m4-WKs" secondAttribute="trailing" constant="27" id="c45-ia-pW5"/>
-                            <constraint firstItem="SSH-Up-qny" firstAttribute="top" secondItem="IZp-CY-IYy" secondAttribute="bottom" constant="8" id="eSW-gh-Aa4"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="SSH-Up-qny" secondAttribute="trailing" constant="112" id="qRH-aF-CJB"/>
-                            <constraint firstItem="nXG-m4-WKs" firstAttribute="top" secondItem="Oco-pG-rDk" secondAttribute="bottom" constant="50" id="wSS-37-qzm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Jvi-x1-Ybe" secondAttribute="trailing" constant="27" id="yFM-5O-9jv"/>
+                            <constraint firstItem="Jvi-x1-Ybe" firstAttribute="centerX" secondItem="nXG-m4-WKs" secondAttribute="centerX" id="5PC-9l-bQS"/>
+                            <constraint firstItem="SSH-Up-qny" firstAttribute="top" secondItem="IZp-CY-IYy" secondAttribute="bottom" constant="8" id="5aM-md-oZb"/>
+                            <constraint firstItem="IZp-CY-IYy" firstAttribute="top" secondItem="nXG-m4-WKs" secondAttribute="bottom" constant="8" id="K2f-8s-kjI"/>
+                            <constraint firstItem="nXG-m4-WKs" firstAttribute="centerX" secondItem="oYn-Tx-Kr9" secondAttribute="centerX" id="QEe-gU-Y4M"/>
+                            <constraint firstItem="nXG-m4-WKs" firstAttribute="top" secondItem="Oco-pG-rDk" secondAttribute="bottom" constant="50" id="Yem-po-EJz"/>
+                            <constraint firstItem="SSH-Up-qny" firstAttribute="centerX" secondItem="nXG-m4-WKs" secondAttribute="centerX" id="ad9-PK-mnZ"/>
+                            <constraint firstItem="IZp-CY-IYy" firstAttribute="centerX" secondItem="nXG-m4-WKs" secondAttribute="centerX" id="dgf-0s-Ozw"/>
+                            <constraint firstItem="Jvi-x1-Ybe" firstAttribute="top" secondItem="SSH-Up-qny" secondAttribute="bottom" constant="8" id="vJV-MY-cI9"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Q&amp;A" id="BfR-fA-B5K"/>
@@ -199,10 +189,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15K-53-oK2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1701.5999999999999" y="-232.53373313343329"/>
+            <point key="canvasLocation" x="974" y="761"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="8FM-8b-NNA"/>
+        <segue reference="E6Z-Xw-yOB"/>
     </inferredMetricsTieBreakers>
 </document>
