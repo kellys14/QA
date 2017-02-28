@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		473915251E6523C0008994DA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473915241E6523C0008994DA /* WelcomeViewController.swift */; };
+		473915271E653C32008994DA /* QAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473915261E653C32008994DA /* QAViewController.swift */; };
 		51929F281E16EEBD0049D0D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51929F271E16EEBD0049D0D2 /* AppDelegate.swift */; };
 		51929F2A1E16EEBD0049D0D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51929F291E16EEBD0049D0D2 /* ViewController.swift */; };
 		51929F2D1E16EEBD0049D0D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51929F2B1E16EEBD0049D0D2 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		473915241E6523C0008994DA /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		473915261E653C32008994DA /* QAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QAViewController.swift; sourceTree = "<group>"; };
 		51929F241E16EEBD0049D0D2 /* QA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51929F271E16EEBD0049D0D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51929F291E16EEBD0049D0D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,9 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				51929F271E16EEBD0049D0D2 /* AppDelegate.swift */,
-				51929F291E16EEBD0049D0D2 /* ViewController.swift */,
-				51929F2B1E16EEBD0049D0D2 /* Main.storyboard */,
 				473915241E6523C0008994DA /* WelcomeViewController.swift */,
+				51929F291E16EEBD0049D0D2 /* ViewController.swift */,
+				473915261E653C32008994DA /* QAViewController.swift */,
+				51929F2B1E16EEBD0049D0D2 /* Main.storyboard */,
 				51929F2E1E16EEBD0049D0D2 /* Assets.xcassets */,
 				51929F301E16EEBD0049D0D2 /* LaunchScreen.storyboard */,
 				51929F331E16EEBD0049D0D2 /* Info.plist */,
@@ -142,6 +145,7 @@
 			files = (
 				473915251E6523C0008994DA /* WelcomeViewController.swift in Sources */,
 				51929F2A1E16EEBD0049D0D2 /* ViewController.swift in Sources */,
+				473915271E653C32008994DA /* QAViewController.swift in Sources */,
 				51929F281E16EEBD0049D0D2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

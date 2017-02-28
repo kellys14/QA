@@ -18,8 +18,10 @@ class ViewController: UIViewController {
                                "What is the capital of Vermont"]
     
     let answers: [String] = ["Grapes","14","Montpelier"]
-    
+ 
     var currentQuestionIndex: Int = 0
+    
+    var qaCount: Int = 0
     
     @IBAction func showNextQuestion(_ sender: UIButton) {
         currentQuestionIndex += 1
