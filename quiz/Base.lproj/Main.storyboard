@@ -100,7 +100,7 @@
                             <constraint firstItem="X2j-iw-pGG" firstAttribute="top" secondItem="020-Ts-mmh" secondAttribute="bottom" constant="8" id="mri-t5-mdd"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Quiz" id="0e8-Fl-Ugi"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Quiz" id="0e8-Fl-Ugi"/>
                     <connections>
                         <outlet property="answerLabel" destination="F2M-Pa-fm2" id="FgM-KG-mpB"/>
                         <outlet property="questionLabel" destination="020-Ts-mmh" id="gII-ER-AIU"/>
@@ -171,7 +171,7 @@
                             <constraint firstItem="nXG-m4-WKs" firstAttribute="top" secondItem="Oco-pG-rDk" secondAttribute="bottom" constant="99" id="rKp-g4-GzE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Q&amp;A" id="BfR-fA-B5K"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Q&amp;A" id="BfR-fA-B5K"/>
                     <connections>
                         <outlet property="answerTextField" destination="Jvi-x1-Ybe" id="qUh-BD-k8G"/>
                         <outlet property="questionTextField" destination="nXG-m4-WKs" id="BbM-uc-Z4t"/>

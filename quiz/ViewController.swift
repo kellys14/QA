@@ -13,11 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var answerLabel: UILabel!
     
-    let questions: [String] = ["From what is cognac is made?" ,
+    var questions: [String] = ["From what is cognac is made?" , // Changed from let to var
                                "What is 7+7?",
                                "What is the capital of Vermont"]
     
-    let answers: [String] = ["Grapes","14","Montpelier"]
+    var answers: [String] = ["Grapes","14","Montpelier"]    // Changed from let to var
  
     var currentQuestionIndex: Int = 0
     
@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         if currentQuestionIndex == questions.count {
            currentQuestionIndex = 0
         }
+        print("Question count: \(questions.count)")
         questionLabel.text = questions[currentQuestionIndex]
         answerLabel.text = "???"
     }

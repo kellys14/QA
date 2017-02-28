@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QAViewController: UIViewController {
+class QAViewController: UIViewController, UITabBarDelegate {
     
     @IBOutlet var questionTextField: UITextField!
     @IBOutlet var answerTextField: UITextField!
@@ -18,7 +18,6 @@ class QAViewController: UIViewController {
     var newAnswers: [String] = []
     
     var currentQAIndex: Int = 0
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +43,22 @@ class QAViewController: UIViewController {
             print("Cannot added empty text to QA Arrays")
         }
     }
+
+ //   func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
+        //This method will be called when user changes tab.
+    //    print("TAB SWICTH")
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Working FUNCTION")
+        var i: Int = 0
+        let recievingViewController: ViewController = segue.destination as! ViewController
+        
+        while i <= currentQAIndex {
+        //    recievingViewController.questions = recievingViewController.questions + newQuestions[i]
+            recievingViewController.questions.append(newQuestions[i])
+            recievingViewController.questions.append(newAnswers[i])
+            i += 1
+        }
+    }
     
 }
