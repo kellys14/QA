@@ -11,5 +11,7 @@ import UIKit
 class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("Succesfully loaded welcome view controller")
     }
 }

@@ -40,6 +40,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         questionLabel.text = questions[currentQuestionIndex]
+        
+        print("Quiz View Controller successfully loaded")
     }
 
 }

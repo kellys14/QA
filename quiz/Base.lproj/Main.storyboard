@@ -131,7 +131,7 @@
         <!--QA-->
         <scene sceneID="PQy-93-Xr2">
             <objects>
-                <viewController id="lct-Tp-5gd" userLabel="QA" sceneMemberID="viewController">
+                <viewController id="lct-Tp-5gd" userLabel="QA" customClass="QAViewController" customModule="QA" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Oco-pG-rDk"/>
                         <viewControllerLayoutGuide type="bottom" id="AgQ-i0-Mmy"/>
@@ -155,6 +155,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZp-CY-IYy">
                                 <rect key="frame" x="163" y="275" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitQandA:" destination="lct-Tp-5gd" eventType="touchUpInside" id="Cui-Kw-pH4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -169,6 +172,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Q&amp;A" id="BfR-fA-B5K"/>
+                    <connections>
+                        <outlet property="answerTextField" destination="Jvi-x1-Ybe" id="qUh-BD-k8G"/>
+                        <outlet property="questionTextField" destination="nXG-m4-WKs" id="BbM-uc-Z4t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15K-53-oK2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
