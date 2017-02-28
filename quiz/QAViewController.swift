@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QAViewController: UIViewController, UITabBarDelegate {
+class QAViewController: UIViewController, UITabBarControllerDelegate {
     
     @IBOutlet var questionTextField: UITextField!
     @IBOutlet var answerTextField: UITextField!
@@ -21,8 +21,9 @@ class QAViewController: UIViewController, UITabBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         print("Successful QA Load")
+        self.tabBarController?.delegate = self
+
     }
     
 //    viewDidLeave() to send count of QA to add to Quiz?
@@ -43,22 +44,49 @@ class QAViewController: UIViewController, UITabBarDelegate {
             print("Cannot added empty text to QA Arrays")
         }
     }
-
+    
+ //   protocol QAViewController
+    
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+    
+        let item = tabBarController.selectedViewController?.view.tag
+        
+        if item == 1 {
+            print("Tab Tag 1")
+          /*  func prepare(for segue: UIStoryboardSegue, sender: UITabBarControllerDelegate?) { // override?
+                let recievingViewController: ViewController = segue.destination as! ViewController
+                
+                var i: Int = 0
+                while i <= currentQAIndex {
+                    //    recievingViewController.questions = recievingViewController.questions + newQuestions[i]
+                    recievingViewController.questions.append(newQuestions[i])
+                    recievingViewController.answers.append(newAnswers[i])
+                    i += 1
+                }
+            } */
+        }
+        if item == 2 {
+            print("Tab Tag 2")
+        }
+        if item == 0 {
+            print("Tab Tag 0")
+        }
+    }
  //   func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
         //This method will be called when user changes tab.
-    //    print("TAB SWICTH")
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print("Working FUNCTION")
         var i: Int = 0
         let recievingViewController: ViewController = segue.destination as! ViewController
         
-        while i <= currentQAIndex {
+        
         //    recievingViewController.questions = recievingViewController.questions + newQuestions[i]
             recievingViewController.questions.append(newQuestions[i])
-            recievingViewController.questions.append(newAnswers[i])
-            i += 1
-        }
-    }
+            recievingViewController.answers.append(newAnswers[i])
+            
+    } 
     
 }
+

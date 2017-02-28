@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Oim-vY-XaF" firstAttribute="centerX" secondItem="r16-He-MOR" secondAttribute="centerX" id="UYo-Pb-CyE"/>
                             <constraint firstItem="vMI-TG-2rv" firstAttribute="top" secondItem="Oim-vY-XaF" secondAttribute="bottom" constant="271" id="V5E-dM-ZdN"/>
@@ -57,7 +57,7 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" tag="1" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -88,7 +88,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="X2j-iw-pGG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GUS-IL-Aop"/>
                             <constraint firstItem="020-Ts-mmh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="59" id="GeP-cN-hIK"/>
@@ -100,7 +100,7 @@
                             <constraint firstItem="X2j-iw-pGG" firstAttribute="top" secondItem="020-Ts-mmh" secondAttribute="bottom" constant="8" id="mri-t5-mdd"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="Quiz" id="0e8-Fl-Ugi"/>
+                    <tabBarItem key="tabBarItem" title="Quiz" id="0e8-Fl-Ugi"/>
                     <connections>
                         <outlet property="answerLabel" destination="F2M-Pa-fm2" id="FgM-KG-mpB"/>
                         <outlet property="questionLabel" destination="020-Ts-mmh" id="gII-ER-AIU"/>
@@ -136,7 +136,7 @@
                         <viewControllerLayoutGuide type="top" id="Oco-pG-rDk"/>
                         <viewControllerLayoutGuide type="bottom" id="AgQ-i0-Mmy"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="oYn-Tx-Kr9">
+                    <view key="view" tag="2" contentMode="scaleToFill" id="oYn-Tx-Kr9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -160,7 +160,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Jvi-x1-Ybe" firstAttribute="centerX" secondItem="nXG-m4-WKs" secondAttribute="centerX" id="MWI-Cw-okn"/>
                             <constraint firstItem="AgQ-i0-Mmy" firstAttribute="top" secondItem="Jvi-x1-Ybe" secondAttribute="bottom" constant="156" id="WB9-eL-9wZ"/>
@@ -171,7 +171,7 @@
                             <constraint firstItem="nXG-m4-WKs" firstAttribute="top" secondItem="Oco-pG-rDk" secondAttribute="bottom" constant="99" id="rKp-g4-GzE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="Q&amp;A" id="BfR-fA-B5K"/>
+                    <tabBarItem key="tabBarItem" title="Q&amp;A" id="BfR-fA-B5K"/>
                     <connections>
                         <outlet property="answerTextField" destination="Jvi-x1-Ybe" id="qUh-BD-k8G"/>
                         <outlet property="questionTextField" destination="nXG-m4-WKs" id="BbM-uc-Z4t"/>
