@@ -25,8 +25,8 @@ class ViewController: UIViewController {
 //    var additionalQuestions: [String]
 //    var additionalAnswers: [String]
     
-    var additionalQuestion = String()
-    var additionalAnswer = String()
+    var additionalQuestion = [String()]
+    var additionalAnswer = [String()]
  
     var currentQuestionIndex: Int = 0
     

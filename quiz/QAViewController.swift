@@ -78,15 +78,16 @@ class QAViewController: UIViewController, UITabBarControllerDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print("Working FUNCTION")
-        var i: Int = 0
+ /*       var i: Int = 0
         let recievingViewController: ViewController = segue.destination as! ViewController
         
-        
+        while i <= currentQAIndex {
         //    recievingViewController.questions = recievingViewController.questions + newQuestions[i]
             recievingViewController.questions.append(newQuestions[i])
             recievingViewController.answers.append(newAnswers[i])
-            
-    } 
+            i += 1
+        } */
+    }  
     
 }
 
