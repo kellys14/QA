@@ -13,45 +13,40 @@ class QAViewController: UIViewController {
     @IBOutlet var questionTextField: UITextField!
     @IBOutlet var answerTextField: UITextField!
     
-    var newQuestions: [String] = []
-    var newAnswers: [String] = []
-    var currentQAIndex: Int = 0
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Successful QA Load")
-     //   self.tabBarController?.delegate = self
-
+        print("Successful QA View Load")
     }
-
+    
+    // Function to add Question and Answer strings to the quiz through
+    // the "add to quiz" button
     @IBAction func submitQandA(_ sender: UIButton) {
-        if questionTextField.text != "" && answerTextField.text != "" {
-            newQuestions.append(questionTextField.text!)
-            newAnswers.append(answerTextField.text!)
+        if questionTextField.text != "" && answerTextField.text != "" { // If not empty strings
+            questions.append(questionTextField.text!)
+            answers.append(answerTextField.text!)
+            print("Question and Answer successfully added to Quiz")
             answerTextField.text = ""
-            questionTextField.text = ""
-            print("\(newQuestions[currentQAIndex]) added to questions array")
-            print("\(newAnswers[currentQAIndex]) added to answers array")
-            print("currentQAIndex = \(currentQAIndex)")
-            currentQAIndex += 1
-
+            questionTextField.text = "" // Clears the textfields for next string
+            
         }
         else {
             print("Cannot added empty text to QA Arrays")
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("Working FUNCTION")
-        var i: Int = 0
-        let recievingViewController: ViewController = segue.destination as! ViewController
-        
-        while i < currentQAIndex {
-            recievingViewController.questions.append(newQuestions[i])
-            recievingViewController.answers.append(newAnswers[i])
-            i += 1
-        }
-    }  
+    // Below the method only worked with two seperate buttons
+    
+    /*    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     print("prepare segue function reached")
+     var i: Int = 0
+     let recievingViewController: ViewController = segue.destination as! ViewController
+     
+     while i < currentQAIndex {
+     recievingViewController.questions.append(newQuestions[i])
+     recievingViewController.answers.append(newAnswers[i])
+     i += 1
+     }
+     } */
     
 }
 

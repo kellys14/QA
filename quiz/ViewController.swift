@@ -8,30 +8,20 @@
 
 import UIKit
 
+var questions: [String] = ["From what is cognac is made?" , // Changed to Global variable
+    "What is 7+7?",
+    "What is the capital of Vermont"]
+
+var answers: [String] = ["Grapes","14","Montpelier"]    // Changed to Global variable
+
+
 class ViewController: UIViewController {
 
     @IBOutlet var questionLabel: UILabel!
     @IBOutlet var answerLabel: UILabel!
-    
-//    @IBOutlet var newAnswerLabel: Label!
-//    @IBOutlet var newQuestionLabel: UILabel!
-    
-    var questions: [String] = ["From what is cognac is made?" , // Changed from let to var
-                               "What is 7+7?",
-                               "What is the capital of Vermont"]
-    
-    var answers: [String] = ["Grapes","14","Montpelier"]    // Changed from let to var
-    
-//    var additionalQuestions: [String]
-//    var additionalAnswers: [String]
-    
-    var additionalQuestion = [String()]
-    var additionalAnswer = [String()]
  
     var currentQuestionIndex: Int = 0
-    
-    var qaCount: Int = 0
-    
+
     @IBAction func showNextQuestion(_ sender: UIButton) {
         currentQuestionIndex += 1
         if currentQuestionIndex == questions.count {
@@ -52,12 +42,6 @@ class ViewController: UIViewController {
         questionLabel.text = questions[currentQuestionIndex]
         
         print("Quiz View Controller successfully loaded")
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        
     }
 
 }
