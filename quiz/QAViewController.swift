@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QAViewController: UIViewController, UITabBarControllerDelegate {
+class QAViewController: UIViewController {
     
     @IBOutlet var questionTextField: UITextField!
     @IBOutlet var answerTextField: UITextField!
@@ -20,7 +20,7 @@ class QAViewController: UIViewController, UITabBarControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Successful QA Load")
-        self.tabBarController?.delegate = self
+     //   self.tabBarController?.delegate = self
 
     }
 
